@@ -27,7 +27,7 @@ def tsv_maker(books, prefix, bk_dir, root):
 if __name__ == "__main__":
     PREFIX = 'https://raw.githubusercontent.com/cd-public/books/main/'
     root = os.path.dirname(os.path.realpath('make_tsv.py'))  # get the root directory
-    BK_DIR = root + '/books'
-    bk_list = os.listdir(BK_DIR) # get the list of books
+    book_dir = root + '/books'
+    bk_list = os.listdir(book_dir) # get the list of books
 
-    tsv_maker(bk_list, prefix=PREFIX, bk_dir=BK_DIR, root=root)  # make the tsv file
+    tsv_maker(bk_list, prefix=PREFIX, bk_dir=book_dir, root=root)  # make the tsv file
